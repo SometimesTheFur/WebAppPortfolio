@@ -1,3 +1,4 @@
+from PIL import Image
 import json
 import requests
 import streamlit as st
@@ -14,6 +15,8 @@ def load_lottieurl(url: str):
 
 # ----LOAD ASSETS----
 animation1 = load_lottieurl("https://assets10.lottiefiles.com/private_files/lf30_pljwgbzs.json")
+image_hoverdoodle = Image.open("Images/HoverDoodle.png")
+image_r_p_s = Image.open("Images/RockPaperScissors.png")
 
 # ----HEADER----
 with st.container():
@@ -48,11 +51,22 @@ with right_column:
 with st.container():
     st.write("---")
     st.header("My projects")
+    st.write("Some simple and fun interactive toys, puzzles, and games I've built using JS, Java, and Python")
     st.write("##")
-    image_column, discription_column = st.columns((1, 2))
+    image_column_1, discription_column_1 = st.columns((1, 2))
 
-    with image_column:
-        st.write("imggoeshere")
-    with discription_column:
-        st.subheader("Interactive")
-        st.write("Some simple and fun interactive toys, puzzles, and games I've built using JS, Java, and Python")
+    with image_column_1:
+        st.image(image_r_p_s)
+    with discription_column_1:
+        st.subheader("Rock, Paper, Scissors")
+        st.write("The classic project written entirely in JS!")
+
+with st.container():
+    st.write("##")
+    image_column_2, discription_column_2 = st.columns((1, 2))
+
+    with image_column_2:
+        st.image(image_hoverdoodle)
+    with discription_column_2:
+        st.subheader("Hover Doodle")
+        st.write("A fun toy that I made in hopes to reimagine the Etch-a-Sketch")
