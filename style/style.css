@@ -7,7 +7,7 @@ input[type=message], input[type=email], input[type=text], textarea {
     box-sizing: border-box; /* locks padding and width in place */
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical; /* allows user to resize vertical not horizontal */
+    resize: vertical /* allows user to resize vertical not horizontal */
 }
 
 /* Style Submit button */
@@ -21,7 +21,7 @@ button[type=submit] {
 }
 
 /* Hover over button, turns green */
-button[type=submit]: hover {
+button[type=submit]:hover {
     background-color: #45a049;
 }
 

@@ -13,11 +13,14 @@ def load_lottieurl(url: str):
         return None
     return r.json()
 
+
+# ----USE LOCAL CSS----
 def local_css(file_name):
     with open(file_name) as f:
-        st.markdown(f"<Styles>{f.read()}</Styles>", unsafe_allow_html=True)
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-local_css("Styles/Styles.css")
+
+local_css("style/style.css")
 
 # ----LOAD ASSETS----
 animation1 = load_lottieurl("https://assets10.lottiefiles.com/private_files/lf30_pljwgbzs.json")
