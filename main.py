@@ -32,9 +32,10 @@ with st.container():
     st.subheader("Hello, I'm Timothy")
     st.title("A Blossoming Developer for Networking and Cybersecurity")
     st.write(
-        "Currently enrolled in the Networking and Cybersecurity degree program at Finger Lakes Community College with a focus on object-oriented programming languages and technical ethics.")  # NOQA
+        "I am currently enrolled in the Networking and Cybersecurity degree program at Finger Lakes Community College with a focus on object-oriented programming languages and technical ethics.")  # NOQA
+    st.write("This is my landing page written with Python using Streamlit asa a GUI")
     st.write(
-        "To check out a more in-depth portfolio, please visit: [My Google Portfolio](https://sites.google.com/view/timothymahrportfolio/about-me?authuser=0)")  # NOQA
+        "To check out a more in-depth portfolio I created a web app with google.sites, please visit: [My Google Portfolio](https://sites.google.com/view/timothymahrportfolio/about-me?authuser=0)")  # NOQA
 
 # ----WHAT I DO----
 with st.container():
